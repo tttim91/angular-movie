@@ -1,0 +1,8 @@
+<div ng-controller="SearchController">
+    <div class="movie" ng-repeat="movie in view.returnedMovies">
+        <a href="/show/{{movie['imdbID']}}"><p>Title: {{movie["Title"]}}</p></a>
+        <p>Year: {{movie["Year"]}}</p>
+        <img src="{{movie['Poster']}}" />
+    </div>
+
+</div>
